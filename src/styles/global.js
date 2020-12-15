@@ -68,26 +68,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    text-decoration: none;
     transition: all ease-in-out 0.2s;
+    color: ${props => props.theme.colors.black};
+    text-decoration: none;
+
     :hover {
+      color: ${props => props.theme.colors.black};
       text-decoration: none;
-    }
-  }
-
-  .visible, 
-  .invisible {
-    opacity: 0;
-    transition: opacity ease-in-out 2s;
-  }
-  .visible {
-    opacity: 1;
-  }
-
-  @media screen and (min-width: 35em) {
-    html {
-      margin-right: calc(-100vw + 100%);
-      overflow-x: hidden;
     }
   }
 
@@ -168,6 +155,7 @@ const GlobalStyle = createGlobalStyle`
     transform-origin: center right;
     transition: transform 0.3s, opacity 0.3s;
     opacity: 0; 
+    z-index: 999;
   }
   .c-scrollbar:hover {
     transform: scaleX(1.45); 
@@ -192,12 +180,6 @@ const GlobalStyle = createGlobalStyle`
   .has-scroll-dragging .c-scrollbar_thumb {
     cursor: -webkit-grabbing;
     cursor: grabbing;
-  }
-
-  @media screen and (max-width: ${({ theme }) => theme.responsive.mobile}) {
-    .mobile-hide {
-      display: none;
-    }
   }
 `
 export default GlobalStyle
