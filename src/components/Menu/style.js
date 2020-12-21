@@ -52,7 +52,7 @@ export const StyledMenu = styled.div`
     display: flex;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(100%)')};
     opacity: ${({ open }) => (open ? '100%' : '0%')};
-    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 1s, opacity cubic-bezier(0.77, 0, 0.175, 1) 1.2s;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 1.3s, opacity ease-in 0.75s;
     z-index: 9;
 
     section {
@@ -107,7 +107,7 @@ export const RightSide = styled.section`
     background-color: white;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(100%)')};
     opacity: ${({ open }) => (open ? '100%' : '0%')};
-    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 1.3s, opacity cubic-bezier(0.77, 0, 0.175, 1) 1.5s;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 2s, opacity ease-in 0.9s;
     display: flex;
     align-items: center;
 `

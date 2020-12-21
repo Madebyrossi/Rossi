@@ -3,6 +3,7 @@ import locomotiveScroll from 'locomotive-scroll'
 
 import SEO from '../helpers/seo'
 import Header from '../components/Header'
+import Intro from '../components/Intro'
 
 const IndexPage = () => {
   const scrollRef = React.createRef()
@@ -18,8 +19,9 @@ const IndexPage = () => {
       <SEO title="Home" />
       
       <Header />
+      <Intro />
 
-      <div data-scroll data-scroll-speed="1" data-scroll-position="top" style={{height: '3000px', opacity: '1', backgroundColor: 'rgb(191 183 183)'}}>test</div>
+      <div data-scroll data-scroll-speed="1" data-scroll-position="top" style={{height: '3000px', opacity: '1'}}>test</div>
     </div>
   )
 }
