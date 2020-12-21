@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Rossi Studio`,
+    title: `Made by Rossi`,
     description: `Coming soon.`,
     author: `@madebyrossi`,
   },
@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

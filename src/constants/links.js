@@ -1,18 +1,22 @@
 export default [
   {
-    path: "/",
-    text: "Home",
+    path: "/design",
+    text: "Design",
   },
   {
-    path: "/work",
-    text: "Work",
+    path: "/websites",
+    text: "Websites",
   },
   {
-    path: "/services",
-    text: "Services",
+    path: "/wordpress",
+    text: "WordPress",
   },
   {
-    path: "/contact",
-    text: "Contact",
+    path: "/bigcommerce",
+    text: "BigCommerce",
+  },
+  {
+    path: "/shopify",
+    text: "Shopify",
   },
 ]
